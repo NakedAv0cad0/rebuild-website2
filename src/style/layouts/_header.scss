@@ -1,0 +1,64 @@
+@use "../abstarcts" as *;
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    height: fit-content;
+    // position: relative;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 1px;
+    //   background-color: white;
+    //   bottom: -20px;
+    //   left: 0;
+    // }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      ul {
+        display: flex;
+        li > a {
+          padding-inline: 10px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid $primary-color;
+          // position: relative;
+          // &::before {
+          //   content: "";
+          //   position: absolute;
+          //   width: 100%;
+          //   height: 1px;
+          //   background-color: $primary-color;
+          //   bottom: -20px;
+          // }
+        }
+      }
+      .burger-icon {
+        height: 30px;
+        width: 2px;
+        background-color: white;
+        position: relative;
+        user-select: none;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+      i {
+        color: white;
+        cursor: pointer;
+        font-size: larger;
+        user-select: none;
+      }
+    }
+  }
+}
