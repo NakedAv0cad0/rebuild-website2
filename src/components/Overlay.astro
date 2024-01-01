@@ -1,0 +1,19 @@
+---
+const { src, alt, className } = Astro.props;
+const srcArr = src.split("/nakedavocado/");
+const imgHight = srcArr[0] + "/nakedavocado/" + srcArr[1];
+const imgMeduim = srcArr[0] + "/nakedavocado/tr:w-900/" + srcArr[1];
+const imgSmall = srcArr[0] + "/nakedavocado/tr:w-600/" + srcArr[1];
+const bg = srcArr[0] + "/nakedavocado/tr:w-24/" + srcArr[1];
+---
+
+<div class={className} style={`--bg:url(${bg})`}>
+  <img
+    srcset=`
+      ${imgHight} 1200w,
+      ${imgMeduim} 800w,
+      ${imgSmall} 500w
+      `
+    alt={alt}
+  />
+</div>

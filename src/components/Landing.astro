@@ -1,7 +1,29 @@
 ---
-
+import Overlay from "./Overlay.astro";
 ---
 
-<div class="container">
-  
+<div id="landing">
+  <Overlay
+    className="overlay"
+    src="https://ik.imagekit.io/nakedavocado/pj2/landing.jpg?updatedAt=1704089664760"
+    alt="landing image"
+  />
+  <i id="left" class="fas fa-angle-left"></i>
+  <i id="right" class="fas fa-angle-right"></i>
+  <div class="bullted-list">
+    <i class="fa-regular fa-circle"></i>
+    <i class="fa-solid fa-circle active"></i>
+    <i class="fa-regular fa-circle"></i>
+  </div>
+  <div class="container">
+    <div class="text">
+      <h1>Hello World!<br /> We Are Kasper We Make Art.</h1>
+      <p>
+        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+        blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet
+        quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+        elit, eget tincidunt.
+      </p>
+    </div>
+  </div>
 </div>

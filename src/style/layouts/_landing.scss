@@ -1,0 +1,52 @@
+@use "../abstarcts" as *;
+@use "../base" as *;
+
+#landing {
+  position: relative;
+  height: 100vh;
+  .container {
+    @extend %float-text;
+    left: 0;
+    justify-content: end;
+  }
+  #left,
+  #right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: color $delay;
+    &:hover {
+      color: $primary-color;
+    }
+    @include mq("sm") {
+      display: none;
+    }
+  }
+  #left {
+    left: 10px;
+  }
+  #right {
+    right: 10px;
+  }
+  .bullted-list {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    i {
+      color: gray;
+      font-size: larger;
+      transition: color $delay;
+      &.active,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

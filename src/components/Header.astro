@@ -1,7 +1,4 @@
 ---
-// import Image from "astro/components/Image.astro.jsx";
-// import { Image } from "astro:assets";
-
 import { Image } from "astro:assets";
 ---
 
@@ -11,15 +8,17 @@ import { Image } from "astro:assets";
       <Image src="/logo.png" alt="Kasper logo" width={124} height={40} />
     </div>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#protfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul id="menu" class="hidden">
+        <li><a class="nav-link" class="active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#protfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <div class="burger-icon"></div>
+      <div id="menu-btn" class="burger-icon hidden">
+        <div></div>
+      </div>
       <!-- fa searsh icon -->
       <i class="fas fa-search"></i>
     </nav>

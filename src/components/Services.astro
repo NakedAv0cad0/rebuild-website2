@@ -1,0 +1,78 @@
+---
+import Overlay from "./Overlay.astro";
+import Title from "./Title.astro";
+---
+
+<div id="services">
+  <Title title="Services" />
+  <div class="container">
+    <article>
+      <i class="fa-solid fa-display"></i>
+      <div class="text">
+        <h3>Vorem amet intuitive</h3>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+          aliquet quam.
+        </p>
+      </div>
+    </article>
+    <article>
+      <i class="fa-solid fa-gear"></i>
+      <div class="text">
+        <h3>Vorem amet intuitive</h3>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+          aliquet quam.
+        </p>
+      </div>
+    </article>
+    <article>
+      <i class="fa-solid fa-pencil-ruler"></i>
+      <div class="text">
+        <h3>Vorem amet intuitive</h3>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+          aliquet quam.
+        </p>
+      </div>
+    </article>
+    <article>
+      <i class="fa-solid fa-camera"></i>
+      <div class="text">
+        <h3>Vorem amet intuitive</h3>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+          aliquet quam.
+        </p>
+      </div>
+    </article>
+  </div>
+  <div class="holder">
+    <Overlay
+      className="overlay"
+      alt="Design image"
+      src="https://ik.imagekit.io/nakedavocado/pj2/design-features.jpg?updatedAt=1704103166821"
+    />
+    <div class="container">
+      <div class="text">
+        <h2>OUR DESIGN COMES WITH...</h2>
+        <div>
+          <p>Responsive Design</p>
+          <p>Modern And Clean Design</p>
+          <p>Clean Code</p>
+          <p>Browser Friendly</p>
+        </div>
+      </div>
+    </div>
+    <div class="image">
+      <Overlay
+        alt="Phone image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/mobile.png?updatedAt=1704103142808"
+      />
+    </div>
+  </div>
+</div>
