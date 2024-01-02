@@ -51,8 +51,10 @@
     position: relative;
     margin-top: 30px;
     height: 60vh;
+    overflow: hidden;
     .container {
       @extend %float-text;
+      z-index: 1;
       right: 0;
       .text {
         div {
@@ -77,12 +79,40 @@
         }
       }
     }
-    .image {
-      position: absolute;
-      width: 30%;
-      height: 40%;
-      & > .overlay {
-        position: static;
+    .image-top {
+      img {
+        left: 10%;
+        top: 30%;
+        @include mq("lg") {
+          top: -50%;
+          left: -10%;
+          transform: rotate(325deg);
+        }
+      }
+    }
+    .image-bottom {
+      img {
+        visibility: hidden;
+        @include mq("lg") {
+          visibility: visible;
+          bottom: -50%;
+          right: -10%;
+          transform: rotate(325deg);
+        }
+      }
+    }
+    .image-top,
+    .image-bottom {
+      img {
+        position: absolute;
+        width: 338px;
+        height: 462px;
+        @include mq("lg") {
+          z-index: -1;
+        }
+      }
+      @include mq("md") {
+        display: none;
       }
     }
   }
