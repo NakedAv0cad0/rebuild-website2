@@ -114,10 +114,8 @@
       font-weight: 400;
     }
     h2 {
-      margin-bottom: 30px;
       font-weight: 500;
       letter-spacing: 0.5px;
-      text-align: start;
     }
     p {
       line-height: 2;
@@ -130,16 +128,17 @@
   }
   @include mq("sm") {
     top: 55%;
-    text-align: center;
     .text {
       padding: 50px 20px;
       h1 {
         font-size: 30px;
+        text-align: center;
       }
       h2 {
         font-size: 25px;
       }
       p {
+        text-align: center;
         line-height: 1.6;
       }
     }

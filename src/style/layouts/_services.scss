@@ -16,9 +16,12 @@
       i {
         margin-top: 5px;
         font-size: 50px;
+        @include mq("md") {
+          font-size: 30px;
+        }
       }
       .text {
-        h3 {
+        h2 {
           margin-bottom: 10px;
           color: $primary-color;
         }
@@ -27,15 +30,17 @@
           line-height: 2;
           max-width: 445px;
         }
-        @include mq("sm") {
-          max-width: 350px;
-          h3 {
-            font-size: 18px;
+        @include mq("md") {
+          h2 {
+            font-size: 20px;
           }
           p {
             line-height: 1.6;
             font-size: 14px;
           }
+        }
+        @include mq("sm") {
+          max-width: 350px;
         }
       }
       @include mq("lg") {
@@ -57,6 +62,11 @@
       z-index: 1;
       right: 0;
       .text {
+        h2 {
+          margin-bottom: 20px;
+          font-size: 22px;
+          text-align: start;
+        }
         div {
           display: flex;
           flex-direction: column;

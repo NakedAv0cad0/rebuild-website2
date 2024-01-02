@@ -1,9 +1,15 @@
 ---
-const { src, alt, className } = Astro.props;
+const { src, alt, className, high, meduim, small } = Astro.props;
+
+const highRes = high || "1200";
+const meduimRes = meduim || "768";
+const smallRes = small || "500";
+
 const srcArr = src.split("/nakedavocado/");
-const imgHight = srcArr[0] + "/nakedavocado/" + srcArr[1];
-const imgMeduim = srcArr[0] + "/nakedavocado/tr:w-900/" + srcArr[1];
-const imgSmall = srcArr[0] + "/nakedavocado/tr:w-600/" + srcArr[1];
+const imgHight = srcArr[0] + "/nakedavocado/tr:w-" + highRes + "/" + srcArr[1];
+const imgMeduim =
+  srcArr[0] + "/nakedavocado/tr:w-" + meduimRes + "/" + srcArr[1];
+const imgSmall = srcArr[0] + "/nakedavocado/tr:w-" + smallRes + "/" + srcArr[1];
 const bg = srcArr[0] + "/nakedavocado/tr:w-24/" + srcArr[1];
 ---
 
@@ -11,7 +17,7 @@ const bg = srcArr[0] + "/nakedavocado/tr:w-24/" + srcArr[1];
   <img
     srcset=`
       ${imgHight} 1200w,
-      ${imgMeduim} 800w,
+      ${imgMeduim} 768w,
       ${imgSmall} 500w
       `
     alt={alt}

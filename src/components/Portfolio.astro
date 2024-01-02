@@ -1,0 +1,145 @@
+---
+import Overlay from "./Overlay.astro";
+import Title from "./Title.astro";
+---
+
+<div id="portfolio">
+  <Title title="Portfolio" />
+  <div class="filter">
+    <button class="active">All</button>
+    <button>App</button>
+    <button>Photo</button>
+    <button>Web</button>
+    <button>Print</button>
+  </div>
+  <div class="gallery">
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-01.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-02.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-03.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-04.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-05.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-06.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-07.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+    <article>
+      <Overlay
+        className="image"
+        alt="Awesome image"
+        src="https://ik.imagekit.io/nakedavocado/pj2/shuffle-08.jpg"
+        high="500"
+        meduim="600"
+        low="500"
+      />
+      <div class="caption">
+        <h2>Awesome Image</h2>
+        <p>Photography</p>
+      </div>
+    </article>
+  </div>
+  <button class="load-more">More</button>
+  <div class="video">
+    <div class="float-text">
+      <div class="text">
+        <h2>SUPER AWESOME VIDEO HERE</h2>
+        <span>It's all you need</span>
+        <button>SEE MORE</button>
+      </div>
+    </div>
+    <video loop autoplay muted>
+      <source
+        src="https://ik.imagekit.io/nakedavocado/pj2/video.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</div>

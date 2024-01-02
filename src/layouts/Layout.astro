@@ -3,6 +3,7 @@ import "../style/style.scss";
 import Header from "../components/Header.astro";
 import Landing from "../components/Landing.astro";
 import Services from "../components/Services.astro";
+import Portfolio from "../components/Portfolio.astro";
 interface Props {
   title: string;
 }
@@ -27,6 +28,7 @@ const { title } = Astro.props;
   <Header />
   <Landing />
   <Services />
+  <Portfolio />
   <body>
     <slot />
   </body>
