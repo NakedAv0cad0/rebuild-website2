@@ -1,0 +1,151 @@
+---
+import { Image } from "astro:assets";
+import Overlay from "./Overlay.astro";
+import Title from "./Title.astro";
+---
+
+<div id="about">
+  <Title title="About Us" />
+  <Overlay
+    src="https://ik.imagekit.io/nakedavocado/pj2/about.png"
+    alt="Tablet image"
+    className="image"
+  />
+  <div class="holder">
+    <Overlay
+      src="https://ik.imagekit.io/nakedavocado/pj2/back-about.png?"
+      alt="Sample image"
+      className="overlay"
+    />
+    <div class="text-float">
+      <div class="field">
+        <div class="icon">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <span>1.236</span>
+        <p>Coffee Drinks</p>
+      </div>
+      <div class="field">
+        <div class="icon">
+          <i class="fa-regular fa-folder"></i>
+        </div>
+        <span>256</span>
+        <p>Completed Projects</p>
+      </div>
+      <div class="field">
+        <div class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <span>1.743</span>
+        <p>Mail Sent</p>
+      </div>
+      <div class="field">
+        <div class="icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <span>17</span>
+        <p>Awards Received</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="testimonials">
+      <h2>TESTIMONIALS</h2>
+      <p>
+        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+        blandit aliquet elit, eget tincidunt.
+      </p>
+      <div class="holder">
+        <div class="bullted-list">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-solid fa-circle active"></i>
+          <i class="fa-regular fa-circle"></i>
+        </div>
+        <article>
+          <Image
+            class="image"
+            src="https://ik.imagekit.io/nakedavocado/pj2/worker-1.jpg"
+            alt="Worker image"
+            width={100}
+            height={100}
+          />
+          <div class="text">
+            <p>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+            <span>John Doe, CEO</span>
+
+            <hr />
+          </div>
+        </article>
+        <article>
+          <Image
+            class="image"
+            src="https://ik.imagekit.io/nakedavocado/pj2/worker-2.jpg"
+            alt="Worker image"
+            width={100}
+            height={100}
+          />
+          <div class="text">
+            <p>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+            <span>John Doe, CEO</span>
+
+            <hr />
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="skills">
+      <h2>SKILLS</h2>
+      <p>
+        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+        blandit aliquet elit, eget tincidunt.
+      </p>
+      <div class="holder">
+        <article>
+          <h3>ADOBE</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </article>
+        <article>
+          <h3>HTML & CSS</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </article>
+        <article>
+          <h3>JAVASCRIPT</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </article>
+        <article>
+          <h3>PHP</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="quote">
+    <Overlay
+      className="overlay"
+      src="https://ik.imagekit.io/nakedavocado/pj2/quote.jpg"
+      alt="image"
+    />
+    <div class="container">
+      <q>
+        Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+        eget tincidunt.
+      </q>
+      <br />
+      <p>John Doe</p>
+    </div>
+  </div>
+</div>

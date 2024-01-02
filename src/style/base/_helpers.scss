@@ -144,3 +144,21 @@
     }
   }
 }
+
+.bullted-list {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  i {
+    color: gray;
+    font-size: larger;
+    transition: color $delay;
+    &.active,
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
