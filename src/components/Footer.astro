@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import Overlay from "./Overlay.astro";
+---
+
+<footer id="footer">
+  <Overlay
+    className="overlay"
+    src="https://ik.imagekit.io/nakedavocado/pj2/subscribe.jpg"
+    alt="image"
+  />
+  <div class="container">
+    <Image
+      class="logo"
+      src="https://ik.imagekit.io/nakedavocado/pj2/logo.png"
+      alt="Logo"
+      width={112}
+      height={36}
+    />
+    <div class="social">
+      <h3>WE ARE SOCIAL</h3>
+      <hr />
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <p>
+      &copy;<span id="year"></span>
+      <a href="#">Kasper</a> All rights reserved
+    </p>
+  </div>
+</footer>

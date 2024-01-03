@@ -1,0 +1,49 @@
+@use "../abstarcts" as *;
+@use "../abstarcts" as *;
+
+#footer {
+  position: relative;
+  .overlay {
+    filter: brightness(0.3);
+  }
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px 60px;
+    color: white;
+    text-align: center;
+    @include mq("md") {
+      gap: 40px;
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      gap: 30px;
+      h3 {
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 10px;
+      }
+    }
+    p {
+      font-size: 16px;
+      @include mq("md") {
+        font-size: 14px;
+      }
+      a {
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
+}
