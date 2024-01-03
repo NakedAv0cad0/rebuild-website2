@@ -91,4 +91,101 @@
       }
     }
   }
+  .contact {
+    margin-block: $section-padding;
+    text-align: center;
+    p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: $primary-color;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
+      border: none;
+      &:hover {
+        background-color: $primary-dark-color;
+      }
+    }
+  }
+  .mail {
+    margin-bottom: $section-padding;
+    height: 30vh;
+    height: 30svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      gap: 40px;
+      @include mq("md") {
+        flex-direction: column;
+      }
+      .mail-box {
+        border: 1px solid white;
+        display: flex;
+        align-items: stretch;
+        padding-left: 20px;
+        height: 60px;
+        @include mq("md") {
+          height: 50px;
+          padding-left: 10px;
+        }
+        input {
+          border: none;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          font-size: 18px;
+          padding-left: 20px;
+          &::placeholder {
+            color: white;
+          }
+          @include mq("md") {
+            font-size: 16px;
+            padding-left: 10px;
+            max-width: 150px;
+          }
+        }
+        button {
+          // margin-left: 20px;
+          padding: 10px 20px;
+          background-color: $primary-color;
+          cursor: pointer;
+          font-size: 18px;
+          color: white;
+          border: none;
+          &:hover {
+            background-color: $primary-dark-color;
+          }
+          @include mq("md") {
+            font-size: 16px;
+            padding: 10px 10px;
+          }
+        }
+        i {
+          font-size: 20px;
+          align-self: center;
+          @include mq("md") {
+            font-size: 20px;
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 665px;
+        @include mq("md") {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

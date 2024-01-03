@@ -1,4 +1,5 @@
 ---
+import Overlay from "./Overlay.astro";
 import Title from "./Title.astro";
 ---
 
@@ -76,5 +77,27 @@ import Title from "./Title.astro";
       </ul>
       <button>Buy Now</button>
     </article>
+  </div>
+  <div class="contact">
+    <p>Contact us if you have special request</p>
+    <button>Contact Us</button>
+  </div>
+  <div class="mail">
+    <Overlay
+      src="https://ik.imagekit.io/nakedavocado/pj2/subscribe.jpg"
+      alt="image"
+      className="overlay"
+    />
+    <div class="container">
+      <div class="mail-box">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Your Email" />
+        <button>Subscribe</button>
+      </div>
+      <p>
+        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+        blan dit aliquet elit, eget tincidunt.
+      </p>
+    </div>
   </div>
 </div>
