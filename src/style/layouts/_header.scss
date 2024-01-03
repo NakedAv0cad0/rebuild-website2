@@ -1,8 +1,19 @@
 @use "../abstarcts" as *;
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all $delay;
+  &.atTop {
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+  }
+  &.sticky {
+    transform: translateY(0);
+  }
   .container {
     position: relative;
     display: flex;
@@ -34,6 +45,7 @@ header {
           &:hover,
           &:focus,
           &.active {
+            color: $primary-color;
             &::before {
               content: "";
               position: absolute;
