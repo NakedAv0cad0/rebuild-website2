@@ -1,0 +1,72 @@
+@use "../abstarcts" as *;
+@use "../base" as *;
+
+#contact {
+  & > .container {
+    margin-block: $section-padding;
+    display: flex;
+    gap: 40px;
+    @include mq("md") {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 30px;
+      input,
+      textarea {
+        background-color: transparent;
+        padding: 20px;
+        border: 1px solid #999;
+        // outline: none;
+        font-size: 16px;
+      }
+      textarea {
+        font-size: 17px;
+        height: 200px;
+      }
+      button {
+        padding: 15px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 18px;
+        align-self: end;
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        &:hover {
+          background-color: $primary-dark-color;
+        }
+      }
+    }
+    .holder {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+      @include mq("md") {
+        order: -1;
+        align-items: center;
+      }
+      h3 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          color: $light-color;
+          margin-bottom: 10px;
+        }
+      }
+      .field:last-of-type {
+        ul {
+          li {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
